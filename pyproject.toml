@@ -1,0 +1,13 @@
+[project]
+name = "bd-group-1-finance"
+version = "0.1.0"
+description = "TPC-H Lakehouse migration / Group 1 Finance team"
+requires-python = ">=3.10"
+dependencies = [
+    "pyspark>=3.5",
+    "databricks-sdk>=0.30",
+]
+
+[tool.uv]
+# Databricks notebooks use the runtime's Python; no install needed on the cluster.
+# This file exists so `uv sync` works for local development and CI.
